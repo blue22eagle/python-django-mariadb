@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<br>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Django test</title>
+</head>
+<body>
+<p>{{mytest}}
+{{mytest2}}</p>
+<h1>hello world!</h1>
+Today is {{today}}.
+We are 
+{% if today.day == 1 %} the first day
+{% elif today.day == 24 %} twenty for
+{% elif today.day == 30 %} the last day
+{% else %} I don't know
+{% endif %}
+</br>
+{% for day in daysOfWeek %}
+<p>{{day}}</p>
+{% endfor %}
+<a href="/add"><button>Add new</button></a>
+<a href="/show"><button>Show details</button></a>
+</body>
+</html>
